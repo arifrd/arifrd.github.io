@@ -78,14 +78,14 @@ input {
 	font-family: 'Lato', arial, sans-serif;
 }
 a {
-  color: #ecae05;
-  text-decoration: none;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+	color: #ecae05;
+	text-decoration: none;
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
 }
 a:hover {
-  color: #fbcf57; 
-  text-decoration: none;
+	color: #fbcf57; 
+	text-decoration: none;
 }
 a:focus {
 	color: #ecae05;
@@ -104,46 +104,98 @@ a:focus {
 	max-width: 70em;
 	margin: 0 auto;
 	padding: 0 1.5em;
+	min-width: 40em;
+
 }
+
 #wrapper {
 	min-height: 100%;
 	position: relative;
 	overflow: hidden;
 }
+#header {
+	height: 50px;
+	background-color: #ffffff;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	overflow: hidden;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.nav-logo {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+	color: #ffffff;
+}
+.nav-logo h3 a {
+	display: inline;
+	color: #ecae05;
+}
+.nav-menu {
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+.nav-menu li {
+	float: left;
+	display: inline-block;
+	height: 50px;
+	transition: all .15s ease-in-out;
+	list-style: none;
+}
+.nav-menu a {
+	display: inline-block;
+	color: #ecae05;
+	padding: 0px 14px;
+}
+.nav-menu a:hover {
+	opacity: 0.6;
+}
+.nav-logo,
+.nav-menu li {
+	line-height: 50px;
+}
 #top{
-	background-color:#ecae05;
+	background-color: #ecae05;
 	width:100%;
 	content:'';
-	top:0;
-	left:0;
+	position: relative;
+	top: 50px;
+	left: 0;
 	height: 225px;
 }
 .land-wrap {
 	position: relative;
-	top: -230px;
+	top: -180px;
 	padding-top: 60px;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 	width: 100%;
-	height: 100%;
-	z-index: 1;
 	overflow: hidden;
 }
 .gadget {
 	width: 40%;
 	float: left;
 }
+.gadget .device {
+	width: 72%;
+}
+.gadget .playstore {
+	text-align: center;
+	width: 72%;
+}
 .about {
 	width: 58%;
 	float: left;
+	overflow: hidden;
 }
 .about .window {
 	background-color:#FFF;
-	width:100%;
+	width: 99%;
 	border-radius:3px;
 	position: relative;
-	top: 45px;
-	padding-left: 2%;
-	box-shadow:0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
+	box-shadow:0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.08);
 	margin-bottom: 50px;
 }
 .about .window-body {
@@ -179,16 +231,47 @@ a:focus {
 	margin-right: 23px;
 	opacity: 0.9;
 }
+blockquote {
+	background: #f9f9f9;
+	border-left: 5px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+	font-style: italic;
+}
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.15em;
+	vertical-align: -0.4em;
+}
+blockquote p {
+ 	display: inline;
+}
 #footer {
 	width: 100%;
 	position: absolute;
+	overflow: hidden;
 	bottom: 0;
 	left: 0;
 	padding-bottom: 26px;
 }
 
 
+.fadein { 
+		position: relative;
+	width: 88%;
+	height:auto; 
+}
 
+.fadein img { 
+	position:absolute; 
+	left:0; 
+	top:auto;
+
+}
 
 
 
